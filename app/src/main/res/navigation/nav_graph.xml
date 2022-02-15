@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/catogoriesFragment">
+
+    <fragment
+        android:id="@+id/catogoriesFragment"
+        android:name="com.example.navcomponentdemo.CatogoriesFragment"
+        android:label="fragment_catogories"
+        tools:layout="@layout/fragment_catogories" >
+        <argument
+            android:name="DemoValue"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_catogoriesFragment_to_myStuffFragment"
+            app:destination="@id/myStuffFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myStuffFragment"
+        android:name="com.example.navcomponentdemo.MyStuffFragment"
+        android:label="fragment_my_stuff"
+        tools:layout="@layout/fragment_my_stuff" />
+    <fragment
+        android:id="@+id/featuredFragment"
+        android:name="com.example.navcomponentdemo.FeaturedFragment"
+        android:label="fragment_featured"
+        tools:layout="@layout/fragment_featured" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.example.navcomponentdemo.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" >
+        <action
+            android:id="@+id/action_notificationFragment_to_catogoriesFragment"
+            app:destination="@id/catogoriesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedFragment"
+        android:name="com.example.navcomponentdemo.SavedFragment"
+        android:label="fragment_saved"
+        tools:layout="@layout/fragment_saved" />
+</navigation>

@@ -4,7 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/NavComponentDemo/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/NavComponentDemo/app/src/main/res/layout/fragment_catogories.xml" value="0.21" />
         <entry key="..\:/NavComponentDemo/app/src/main/res/layout/fragment_featured.xml" value="0.358695652173913" />
+        <entry key="..\:/NavComponentDemo/app/src/main/res/layout/fragment_my_stuff.xml" value="0.17831813576494426" />
+        <entry key="..\:/NavComponentDemo/app/src/main/res/layout/fragment_notification.xml" value="0.17831813576494426" />
+        <entry key="..\:/NavComponentDemo/app/src/main/res/layout/fragment_saved.xml" value="0.17831813576494426" />
+        <entry key="..\:/NavComponentDemo/app/src/main/res/menu/bottom_menu.xml" value="0.18" />
       </map>
     </option>
   </component>
