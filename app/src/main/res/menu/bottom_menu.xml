@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/destination_featured"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="Home" />
+    <item
+        android:id="@+id/destination_categories"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="Catogories" />
+    <item
+        android:id="@+id/destination_notification"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="Notofication" />
+    <item
+        android:id="@+id/destination_saved"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="Saved" />
+    <item
+        android:id="@+id/destination_mystuff"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="My Stuff" />
+</menu>
