@@ -1,22 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".NotificationFragment">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <data>
+
+    </data>
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textSize="50dp"
-        android:textColor="@color/teal_700"
-        android:gravity="center"
-        android:text="Fragment Notification" />
-    <Button
-        android:layout_width="wrap_content"
-        android:text="Go to Catogories"
-        android:layout_gravity="top|center"
-        android:layout_height="wrap_content"/>
+        tools:context=".NotificationFragment">
 
-</FrameLayout>
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="50dp"
+            android:textColor="@color/teal_700"
+            android:gravity="center"
+            android:text="Fragment Notification" />
+
+        <Button
+            android:id="@+id/gotoCatogory"
+            android:layout_width="wrap_content"
+            android:text="Go to Catogories"
+            android:layout_gravity="top|center"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+</layout>

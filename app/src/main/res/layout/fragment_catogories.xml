@@ -1,32 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".CatogoriesFragment">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <data>
+
+    </data>
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textSize="50dp"
-        android:textColor="@color/teal_700"
-        android:gravity="center"
-        android:text="Fragment Catogories" />
-    <TextView
-        android:id="@+id/catergoryDemoValue"
-        android:layout_width="match_parent"
-        android:text="Demo Value"
-        android:textSize="22dp"
-        android:textColor="@color/purple_700"
-        android:gravity="center|top"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:id="@+id/catergorygotoStuff"
-        android:layout_width="wrap_content"
-        android:text="Go To Stuff"
-        android:textSize="22dp"
-        android:textColor="@android:color/holo_red_dark"
-        android:gravity="bottom"
-        android:layout_height="wrap_content"/>
-</FrameLayout>
+        tools:context=".CatogoriesFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="50dp"
+            android:textColor="@color/teal_700"
+            android:gravity="center"
+            android:text="Fragment Catogories" />
+
+        <TextView
+            android:id="@+id/catergoryDemoValue"
+            android:layout_width="match_parent"
+            android:text="Demo Value"
+            android:textSize="22dp"
+            android:textColor="@color/purple_700"
+            android:gravity="center|top"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/catergorygotoStuff"
+            android:layout_width="wrap_content"
+            android:text="Go To Stuff"
+            android:textSize="22dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:gravity="bottom"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+</layout>
