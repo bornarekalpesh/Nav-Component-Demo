@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.navcomponentdemo.R
 import com.example.navcomponentdemo.databinding.ItemUserListBinding
 import com.example.navcomponentdemo.model.Data
+import com.example.navcomponentdemo.model.TestingData
+import com.squareup.picasso.Picasso
 
 class UserAdapter: ListAdapter<Data, UserAdapter.UserAdapaterViewholder>(DiffUtil()) {
 
@@ -21,12 +23,16 @@ class UserAdapter: ListAdapter<Data, UserAdapter.UserAdapaterViewholder>(DiffUti
             .inflate(layoutInflater, R.layout.item_user_list, parent, false)
 
 
-
         return UserAdapaterViewholder(binding)
     }
 
     override fun onBindViewHolder(holder: UserAdapaterViewholder, position: Int) {
-        val item=getItem(position)
+        binding.tvEmail.text=getItem(position).email
+        binding.tvName.text=getItem(position).first_name+getItem(position).last_name
+        binding.tvId.text=getItem(position).id.toString()
+        Picasso.get()
+            .load(getItem(position).avatar)
+            .into(binding.profileImage);
     }
 
     class UserAdapaterViewholder(val binding: ViewDataBinding):RecyclerView.ViewHolder(binding.root){

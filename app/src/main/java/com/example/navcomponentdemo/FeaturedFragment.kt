@@ -24,6 +24,7 @@ class FeaturedFragment : Fragment() {
    lateinit var  binding: FragmentFeaturedBinding
 
    lateinit var userRepository:UserRepositoryViewModel
+   var userAdapter=UserAdapter()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -40,9 +41,9 @@ class FeaturedFragment : Fragment() {
 
         userRepository.userList.observe(viewLifecycleOwner) {
             Log.e("API_RESPONSE", it.toString())
-
+            userAdapter.submitList(it.data)
         }
-        val userAdapter=UserAdapter()
+
 
         binding.featuredFragmentRv.layoutManager=LinearLayoutManager(activity)
         binding.featuredFragmentRv.adapter=userAdapter
