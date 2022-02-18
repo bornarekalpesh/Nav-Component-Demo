@@ -11,14 +11,25 @@
         android:layout_height="match_parent"
         tools:context=".FeaturedFragment">
 
-        <!-- TODO: Update blank fragment layout -->
-        <TextView
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textSize="50dp"
-            android:textColor="@color/teal_700"
-            android:gravity="center"
-            android:text="Fragment Featured" />
+            android:orientation="vertical"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:layout_gravity="center"
+                android:textColor="@color/teal_700"
+                android:text="Fragment Featured" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/featuredFragment_rv"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
 
     </FrameLayout>
 </layout>
