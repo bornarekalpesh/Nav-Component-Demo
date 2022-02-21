@@ -1,4 +1,4 @@
-package com.example.navcomponentdemo
+package com.example.navcomponentdemo.ui.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.Navigation
+import com.example.navcomponentdemo.R
 import com.example.navcomponentdemo.databinding.FragmentNotificationBinding
 
 class NotificationFragment : Fragment() {
@@ -30,7 +31,7 @@ class NotificationFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.gotoCatogory.setOnClickListener{
-            val nextaction=NotificationFragmentDirections.nextaction()
+            val nextaction= NotificationFragmentDirections.nextaction()
             nextaction.demoValue=20
             Navigation.findNavController(view).navigate(nextaction)
         }
